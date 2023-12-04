@@ -1,0 +1,66 @@
+Logs:
+-La palabra log es un registro oficial de eventos durante un rango de tiempo en particular.
+-Debe responder a las W5: who, what,when,where, y why(Quien, que,cuando, donde y por qué) evento concurrente para un dispositivo.
+-Tambien se le considera como aquel mensaje que genera el programador de un sistema operativo, aplicacion o proceso, en virtud en la cual se muestra un evento.
+-Los logs son ficheros de texto que almacenan informacion relevante como conexiones remotas, eventos del sistema,etc
+En definitiva, son registros de informacion que nos llegan de diferentes origenes o fuentes a una Organizacion y, que actuando con una politica de gestion de logs bien organizada y documentada, es muy conveniente para conocimeinto correcto de la red y una deteccion temprana de errores, debilidades, vulnerabilidades y ataques de los Sistemas de Informacion.
+
+
+------------- Diseño de sistema de uso -----------
+** Objetivos: Definir las actividades del usuario segun su depertamento, eventos del sistema, errores .
+Funciones para registrar actividades. 
+usuarios_uso: Roles
+superadministradir = duracion(hora_inicio, hora_final), acceso_total_ERP
+
+user_contable = duracion, facturacion, conatbilidad, impuestos
+user_inventario = duracion, actividades = registro_movimientos, almacenes, crud_SKU 
+user_recuros_humanos = duracion, actividades = manejo_nomina, novedades, contratacion
+user_compras = duracion, actividades = gestion_pedidos, registro_proveedores, control_inventario
+user_tesoreria = duracion, actividades = registro_compras informes_pago
+user_contabilidad = duracion, actividades = conciliación_bancaria, cierre_mensual, análisis_gastos, gestión_facturas
+user_ventas = duracion, actividades =  seguimiento_cotizaciones, gestión_pedidos_clientes, análisis_performance_clientes, elaboración_reportes_ventas
+equipo_TI: Login == duracion : gestión_usuarios, mantenimiento_servidores, implementación_actualizaciones, monitoreo_seguridad
+
+Funciones para registrar eventos:
+Eventos del sistema:
+-Inicio y Cierre de Sesiones
+-Registrar eventos cuando los usuarios inician sesión y cierran sesión en el sistema.
+-Actualizaciones de software
+-Registrar eventos de respaldo (backup) y restauración del sistema
+-Registrar eventos cuando se realicen cambios en la configuración del sistema o de la aplicación.
+-Registrar eventos de actividades programadas, como tareas de mantenimiento y limpieza.
+
+Funciones para registrar erroes:
+Errores:
+-Registro de intentos de inicio de sesión fallidos, lo que podría indicar intentos de acceso no autorizado.
+-Registro de errores cuando los datos proporcionados por el usuario no cumplen con los criterios de validación establecidos.
+-Registro de errores de conexión o comunicación con servidores, base de datos u otros componentes de red.
+-Registro de intentos de acceso no autorizado o actividades que podrían indicar posibles violaciones de seguridad.
+-Registro de errores que ocurren durante la actualización de registros en la base de datos.
+-Registro de problemas en la generación de informes o análisis de datos.
+
+
+** Investigacion general :
+
+
+
+**Lenguaje de programcion: Python
+
+
+
+**Herramientas de monitoreo y seguimiento:
+-Loggly: Especialmente útil para la recopilación y análisis de logs. Proporciona capacidades de búsqueda rápida y visualización interactiva, lo que puede ser esencial para identificar problemas en un sistema ERP.
+-Datadog: Herramienta de monitoreo que también incluye funciones de registro. Puede integrarse con un ERP para proporcionar visibilidad en tiempo real y alertas personalizadas.
+-Elasticsearch: Almacena y busca datos de logs.
+-Logstash: Procesa y envía logs a Elasticsearch.
+-Kibana: Proporciona una interfaz de usuario para buscar, visualizar e interactuar con los datos almacenados en Elasticsearch
+
+
+**Seguridad y privacidad: 
+
+
+
+
+
+Datos: 
+#En un ERP la integracion de departementos de informacion se almacenan en una unica base de datos

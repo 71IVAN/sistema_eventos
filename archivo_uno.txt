@@ -1,0 +1,10 @@
+Logs
+Python
+Investigacion
+Disriptivo
+Algoritmos de aprendizaje
+
+Reto: Diseñar sistema de seguimiento de uso (Auditoria)
+Libreria de python: Loggin
+Archivos no planos y planos 
+Base de datos para guardar datos

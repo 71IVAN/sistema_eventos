@@ -41,6 +41,18 @@ Errores:
 
 
 ** Investigacion general :
+-La informacion sera guardad en una misma base de datos 
+-Azure Container Apps ofrece opciones para almacenar y ver los registros de la aplicación. Las opciones de registro se configuran en el entorno de Container(Docker)
+-Implementar manejo de excepciones en el código para capturar y registrar errores.
+-Firebase ofrece un servicio de registro (Firebase Crashlytics y Firebase Realtime Database) que permite almacenar y gestionar logs de forma gratuita para aplicaciones móviles y web.
+Proporciona almacenamiento en la nube y herramientas para analizar registros.
+
+Mensajes de request:
+DEBUG: Depuración
+INFO: Información
+WARNING: Advertencia
+ERROR: Error
+CRITICAL: Crítico
 
 
 
@@ -54,6 +66,7 @@ Errores:
 -Elasticsearch: Almacena y busca datos de logs.
 -Logstash: Procesa y envía logs a Elasticsearch.
 -Kibana: Proporciona una interfaz de usuario para buscar, visualizar e interactuar con los datos almacenados en Elasticsearch
+-Logging : Genera una estructura solida para la generacion de logs.
 
 
 **Seguridad y privacidad: 

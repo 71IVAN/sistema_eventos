@@ -47,7 +47,7 @@ Errores:
 -Firebase ofrece un servicio de registro (Firebase Crashlytics y Firebase Realtime Database) que permite almacenar y gestionar logs de forma gratuita para aplicaciones móviles y web.
 Proporciona almacenamiento en la nube y herramientas para analizar registros.
 
-Mensajes de request:
+Severidad: a la clasificación del tipo de evento registrado en función de su importancia o gravedad. Este nivel de severidad se utiliza para identificar la criticidad del evento registrado y puede ayudar en la comprensión y gestión de los registros.
 DEBUG: Depuración
 INFO: Información
 WARNING: Advertencia
